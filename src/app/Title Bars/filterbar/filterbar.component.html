@@ -1,0 +1,11 @@
+<div class="container">
+
+    <div class="cat">
+        <p *ngIf="getFilterName==undefined">Categories</p>
+        <div class="dynamic-title" *ngIf="getFilterName!=undefined">
+            <a routerLink="">Categories&nbsp;</a><span>{{'/ '+getFilterName | titlecase}}</span>
+        </div>
+    </div>
+
+
+</div>

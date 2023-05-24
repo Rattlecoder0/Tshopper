@@ -1,0 +1,43 @@
+.container{
+    margin-top: 30px;
+}
+
+.cat{
+    background-color: var(--orange-color);
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+}
+.cat p, .dynamic-title a, .dynamic-title span{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+.dynamic-title{
+    display: flex;
+}
+
+@media(max-width:770px){
+    .container{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        margin-top: 20px;
+    }
+    .cat p, .dynamic-title a, .dynamic-title span{
+        font-size: 15px;
+    }
+    .cat{
+        height: 35px;
+    }
+}

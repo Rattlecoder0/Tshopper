@@ -1,0 +1,146 @@
+<div class="container">
+
+    <div class="content-wrap">
+
+        <div class="title-filter">
+            <div class="title-arrowdown" (click)="toggleFilterHeight()">
+                <h3>FILTERS</h3>
+                <mat-icon id="filter-arrow">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="sub-filters" id="sub-filter">
+                <li class="attitude">Attitute</li>
+                <li class="emotional">Emotional</li>
+                <li class="gaming">Gaming</li>
+                <li class="sports">Sports</li>
+                <li class="music">Music</li>
+                <li class="food">Food</li>
+                <li class="movies">Movies</li>
+                <li class="animals">Animals</li>
+                <li class="funny">Funny</li>
+                <li class="inspirational">Inspirational</li>
+            </div>
+        </div>
+
+        <div class="grid-wrapper">
+
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="pic">
+                    <img
+                        src="https://cdn.shopify.com/s/files/1/1231/6442/products/M-TSHIRT-16794-20229-LAWNGREEN_6.jpg?v=1661146152">
+                </div>
+                <div class="text">
+                    <div class="title-wishlistlogo">
+                        <h3>T-shrit</h3>
+                        <mat-icon class="wishlist-btn" [ngStyle]="{'color': wishlistAdded ? 'red' : 'black'}"
+                            (click)="toggleWishlist()">{{wishlistAdded?'favorite':'favorite_border'}}
+                        </mat-icon>
+                    </div>
+                    <p>{{des | slice:0:10}}...</p>
+                    <p>499</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</div>

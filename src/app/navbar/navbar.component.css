@@ -1,0 +1,64 @@
+.navbar{
+  position: sticky;
+  top: 0;
+  background-color: #ececec;
+  z-index: 2;
+}
+
+.all-wrap{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+} 
+
+.logo-txt a{
+  text-decoration: none;
+  color: #777;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.ws-logo a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.website-logo{
+  height: 28px;
+  margin-right: 1px;
+  margin-top: -3px;
+}
+
+.wishlist-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+.wishlist-icon:hover{
+  color: rgb(237, 56, 32);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+@media(max-width:575px){
+  .container{
+    width: 100%;
+    padding: 0;
+  }
+  .website-logo{
+    height: 20px;
+  }
+  .logo-txt a{
+    font-size: 15px;
+    }
+    .navbar{
+      height: 50px;
+    }
+    .wishlist-icon{
+      font-size: 20px;
+      
+    }
+}

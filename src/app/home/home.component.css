@@ -1,0 +1,168 @@
+.container{
+    margin-top: 30px;
+}
+
+.all-clothes-title{
+    background-color: var(--orange-color);
+    height: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.all-clothes-title h2{
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    margin: 0;
+    text-decoration: none;
+}
+
+@media(max-width:770px){
+    .container{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:500px){
+    .container{
+        margin-top: 20px;
+    }
+    .all-clothes-title h2{
+        font-size: 15px;
+    }
+    .all-clothes-title{
+        height: 35px;
+    }
+}
+
+
+/* -----cards-------- */
+.grid-wrapper{
+    width: 100%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-row-gap: 20px;
+    grid-auto-rows: minmax(350px,auto);
+    place-items: center;
+}
+
+.pic{
+    overflow: hidden;
+    cursor: pointer;
+}
+.pic img{
+    width: 300px;
+    transition: .35s ease;  
+}
+.pic img:hover{
+    scale: 1.03;
+}
+
+.title-wishlistlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    position: relative;
+}
+.wishlist-btn{
+    position: absolute;
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.text h3{
+    font-size: 15px;
+    margin: 0;
+    color: #454545;
+    cursor: pointer;
+}
+.text p{
+    font-size: 11px;
+    margin: 0 0 8px 0;
+    color: #686868;
+}
+.text p:nth-child(3){
+    font-size: 16px;
+    color: black;
+}
+
+@media(max-width:1400px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
+    }
+    .pic img{
+        width: 270px;
+    }
+}
+
+@media(max-width:1200px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
+    }
+    .pic img{
+        width: 220px;
+    }
+}
+
+@media(max-width:769px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+        grid-auto-rows: minmax(300px,auto);
+    }
+    .pic img{
+        width: 160px;
+    }
+}
+@media(max-width:525px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(185px,1fr));
+    }
+    .pic img{
+        width: 185px;
+    }
+}
+
+@media(max-width:390px){
+    .title-filter{
+        margin-bottom: 20px;
+    }
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(170px,1fr));
+        grid-row-gap: 10px;
+    }
+    .pic img{
+        width: 170px;
+    }
+}
+
+@media(max-width:374px){
+    .title-filter{
+        margin-bottom: 0;
+    }
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+    }
+    .pic img{
+        width: 160px;
+    }
+}
+
+@media(max-width:355px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    }
+    .pic img{
+        width: 250px;
+    }
+}

@@ -1,0 +1,233 @@
+.container{
+    margin-top: 35px;
+}
+.content-wrap{
+    display: flex;
+    width: 100%;
+}
+
+/* ------side filters-------- */
+.title-filter{
+    width: 20%;
+    position: sticky;
+    top: 55px;
+}
+.title-arrowdown h3{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #686868b3;
+    margin: 0;
+}
+.title-arrowdown mat-icon{
+    display: none;
+    transition: .7s ease;
+}
+.sub-filters{
+    width: 100%;
+}
+.sub-filters li{
+    list-style: none;
+    height: 45px;
+    border-bottom:1px solid rgba(161, 161, 161, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(45, 45, 45);
+    cursor: pointer;
+    transition: .2s ease;
+    padding-top: 5px;
+}
+.sub-filters li:hover{
+    border-bottom: 1px solid var(--orange-color);
+}
+
+/* -------card------- */
+.grid-wrapper{
+    width: 80%;
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-row-gap: 20px;
+    grid-auto-rows: minmax(350px,auto);
+    place-items: end;
+}
+
+.pic{
+    overflow: hidden;
+    cursor: pointer;
+}
+.pic img{
+    width: 300px;
+    transition: .35s ease;  
+}
+.pic img:hover{
+    scale: 1.03;
+}
+
+.title-wishlistlogo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    position: relative;
+}
+.wishlist-btn{
+    position: absolute;
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.text h3{
+    font-size: 15px;
+    margin: 0;
+    color: #454545;
+    cursor: pointer;
+}
+.text p{
+    font-size: 11px;
+    margin: 0 0 8px 0;
+    color: #686868;
+}
+.text p:nth-child(3){
+    font-size: 16px;
+    color: black;
+}
+
+
+@media(max-width:1400px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    }
+    .pic img{
+        width: 250px;
+    }
+}
+@media(max-width:1200px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    }
+    .pic img{
+        width: 220px;
+    }
+}
+
+@media(max-width:770px){
+    .container{
+        margin-top: 20px;
+    }
+    .content-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .title-filter{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+        z-index: 2;
+        top: 70px;
+    }
+    .title-arrowdown{
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--orange-color);
+    }
+    .title-arrowdown h3{
+        color: white;
+        font-weight: 400;
+        font-family: Montserrat, sans-serif;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    .title-arrowdown mat-icon{
+        display: flex;
+        color: white;
+    }
+    #sub-filter{
+        height: 0;
+        transition: .7s ease;
+        background-color: white;
+    }
+    .sub-filters li{
+        color: #686868;
+        border-bottom:1px solid white;
+        padding-left: 5px;
+        height: 35px;
+    }
+    .sub-filters li:hover{
+        border-bottom: 1px solid var(--orange-color);
+    }
+
+    /* ----grid--- */
+    .grid-wrapper{
+        width: 100%;
+        place-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(190px,1fr));
+        grid-auto-rows: minmax(300px,auto);
+    }
+    .pic img{
+        width: 190px;
+    }
+}
+
+@media(max-width:575px){
+    .title-filter{
+        top: 55px;
+    }
+    .grid-wrapper{
+        grid-row-gap: 5px;
+    } 
+}
+
+@media(max-width:412px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(185px,1fr));
+    }
+    .pic img{
+        width: 185px;
+    }
+}
+
+@media(max-width:390px){
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(170px,1fr));
+        grid-row-gap: 10px;
+    }
+    .pic img{
+        width: 170px;
+    }
+}
+
+@media(max-width:374px){
+    .title-filter{
+        margin-bottom: 0;
+    }
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(160px,1fr));
+    }
+    .pic img{
+        width: 160px;
+    }
+}
+
+@media(max-width:355px){
+    .title-filter{
+        margin-bottom: 20px;
+    }
+    .grid-wrapper{
+        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    }
+    .pic img{
+        width: 250px;
+    }
+}
